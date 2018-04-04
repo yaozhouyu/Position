@@ -7,18 +7,17 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\XyzpTmpSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = '校园招聘职位分类检查';
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = '校园招聘职位分类检查 - 复审';
+// $this->params['breadcrumbs'][] = $this->title;
 ?>
 
 <div class="xyzp-tmp-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
     
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
+        // 'filterModel' => $searchModel,
 
         'columns' => [
             // ['class' => 'yii\grid\SerialColumn'],
